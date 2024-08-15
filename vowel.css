@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: ; */
+}
+.name {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.parent1 {
+  height: 80vh;
+  width: 80vh;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parent2 {
+  height: 200px;
+  width: 480px;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+input {
+  font-size: 23px;
+  outline: none;
+  padding-left: 10px;
+}
+input:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px yellow;
+}
+button {
+  font-size: 20px;
+  padding: 4px;
+}
+button:hover {
+  background-color: rgb(127, 126, 126);
+  color: white;
+  border-radius: 10px;
+}
+.vowel,
+.constant {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 550;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  top: 30px;
+}
+.vowel {
+  position: relative;
+  right: 80px;
+}
+.constant {
+  position: relative;
+  right: 65px;
+}
+.vowelName {
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+  font-size: 18px;
+}
+.constantName {
+  position: relative;
+  left: 35px;
+  bottom: 30px;
+}
+.button1 {
+  background-color: red;
+  color: white;
+}
+.button1:hover {
+  background-color: rgb(233, 82, 82);
+}
+.button2 {
+  background-color: rgb(240, 234, 234);
+  color: black;
+  border: 0.3px solid black;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .name {
+    font-size: 18px;
+  }
+  .parent1 {
+    height: 80vh;
+    width: 50vh;
+  }
+  .parent2 {
+    height: 200px;
+    width: 330px;
+  }
+  input {
+    width: 150px;
+    font-size: 18px;
+    border: 2px solid rgb(10, 10, 10);
+  }
+  button {
+    font-size: 15px;
+    padding: 2px;
+  }
+  .vowel,
+  .constant {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+  }
+  .vowelName,
+  .constantName {
+    position: relative;
+    left: auto;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+  }
+  .constant {
+    position: relative;
+    top: auto;
+    bottom: 40px;
+    left: 70px;
+  }
+  .vowel {
+    position: relative;
+    right: 80px;
+    top: 40px;
+  }
+}
