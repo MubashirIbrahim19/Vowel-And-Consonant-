@@ -9,15 +9,28 @@ let notVowel = 0;
 button.addEventListener("click", () => {
   button.classList.remove("button2");
   button.classList.add("button1");
-  input1 = input.value;
+  input1 = input.value.trim();
   for (let i of input1) {
     console.log(i);
-    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
-      ++vowelCount;
-      vowelCount = vowelCount + 0;
-    } else {
-      ++notVowel;
-      notVowel = notVowel + 0;
+    if (i !== "") {
+      if (
+        i === "a" ||
+        i === "e" ||
+        i === "i" ||
+        i === "o" ||
+        i === "u" ||
+        i === "A" ||
+        i === "E" ||
+        i === "I" ||
+        i === "O" ||
+        i === "U"
+      ) {
+        vowelCount++;
+        vowelCount = vowelCount + 0;
+      } else {
+        notVowel++;
+        notVowel = notVowel + 0;
+      }
     }
   }
   vowel.innerText = vowelCount;
@@ -29,6 +42,11 @@ button.addEventListener("click", () => {
   console.log(button);
 });
 
+// const vowelsSum = (vowelsSum) => {
+//   console.log(vowelsSum)
+
+//   return vowelsSum;
+// };
 reset.addEventListener("click", () => {
   button.classList.remove("button1");
   button.classList.add("button2");
