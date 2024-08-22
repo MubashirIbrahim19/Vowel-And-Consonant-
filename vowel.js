@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
   input1 = input.value.trim();
   for (let i of input1) {
     console.log(i);
-    if (i !== "") {
+    if (i.match(/[a-zA-Z]/)) {
       if (
         i === "a" ||
         i === "e" ||
