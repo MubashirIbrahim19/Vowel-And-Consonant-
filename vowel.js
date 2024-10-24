@@ -38,15 +38,10 @@ button.addEventListener("click", () => {
   console.log("sum of vowel =", vowel.innerText);
   console.log("sum of not vowel =", constant.innerText);
   button.disabled = true;
-  // console.log(input1);
-  console.log(button);
+    console.log(button);
 });
 
-// const vowelsSum = (vowelsSum) => {
-//   console.log(vowelsSum)
 
-//   return vowelsSum;
-// };
 reset.addEventListener("click", () => {
   button.classList.remove("button1");
   button.classList.add("button2");

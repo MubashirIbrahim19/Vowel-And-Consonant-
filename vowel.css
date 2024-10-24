@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: ; */
 }
 .name {
   font-size: 25px;
@@ -12,7 +11,6 @@ body {
 .parent1 {
   height: 80vh;
   width: 80vh;
-  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +20,6 @@ body {
   height: 200px;
   width: 480px;
   flex-wrap: wrap;
-  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
