@@ -1,17 +1,16 @@
 const input = document.querySelector("input");
-const button = document.querySelector(".button");
+const start = document.querySelector(".start");
 const vowel = document.querySelector(".vowel");
 const constant = document.querySelector(".constant");
 const reset = document.querySelector(".reset");
 let input1 = "";
 let vowelCount = 0;
 let notVowel = 0;
-button.addEventListener("click", () => {
-  button.classList.remove("button2");
-  button.classList.add("button1");
+start.addEventListener("click", () => {
+  start.classList.remove("button2");
+  start.classList.add("button1");
   input1 = input.value.trim();
   for (let i of input1) {
-    console.log(i);
     if (i.match(/[a-zA-Z]/)) {
       if (
         i === "a" ||
@@ -35,21 +34,17 @@ button.addEventListener("click", () => {
   }
   vowel.innerText = vowelCount;
   constant.innerText = notVowel;
-  console.log("sum of vowel =", vowel.innerText);
-  console.log("sum of not vowel =", constant.innerText);
-  button.disabled = true;
-    console.log(button);
+
+  start.disabled = true;
 });
 
-
 reset.addEventListener("click", () => {
-  button.classList.remove("button1");
-  button.classList.add("button2");
-  button.disabled = false;
+  start.classList.remove("button1");
+  start.classList.add("button2");
+  start.disabled = false;
   input.value = "";
   vowelCount = 0;
   notVowel = 0;
   vowel.innerText = 0;
   constant.innerText = 0;
-  console.log(button);
 });
